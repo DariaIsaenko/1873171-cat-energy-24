@@ -6,14 +6,12 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__logo logo">
-        <a class="logo__link logo-link" href="index.html">
-          <img class="logo__img logo__img--icon" src="img/logo/logo-header.svg" width="34" height="38"
-            alt="Логотип питания Cat Energy">
-          <img class="logo__img logo__img--text" src="img/logo/logo-header-text.svg" width="101" height="18"
-            alt="Логотип питания Cat Energy">
-        </a>
-      </div>
+      <a class="page-header__logo-link logo" href="index.html">
+        <img class="logo__img logo__img--icon" src="img/logo/logo-header.svg" width="34" height="38"
+          alt="Логотип питания Cat Energy">
+        <img class="logo__img logo__img--text" src="img/logo/logo-header-text.svg" width="101" height="18"
+          alt="Логотип питания Cat Energy">
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -81,10 +79,10 @@
         <fieldset class="form__data-owner form-data-owner">
           <legend class="form-data-owner__title">Контактные данные (владельца кота)</legend>
           <label class="form-data-owner__info">E-mail:*
-            <input class="form-data-owner__field" type="email" value="kuklachev@gmail.com" name="email" required>
+            <input class="form-data-owner__field" type="email" placeholder="kuklachev@gmail.com" name="email" required>
           </label>
           <label class="form-data-owner__info">Телефон:*
-            <input class="form-data-owner__field" type="tel" value="8 (960) 900-60-90" name="phone" required>
+            <input class="form-data-owner__field" type="tel" placeholder="8 (960) 900-60-90" name="phone" required>
           </label>
         </fieldset>
         <fieldset class="form__comment form-comment">
@@ -128,46 +126,40 @@
         <button class="form__button button" type="submit">Отправить заявку</button>
         <p class="form__text">* — Обязательные поля</p>
       </form>
-      <footer class="page-footer">
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__info contacts__info--text">Приглашаем к сотрудничеству дилеров!</p>
-          <span class="contacts__info contacts__info--address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
-          <div class="contacts__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d999.3050981925577!2d30.32339853915693!3d59.93861013938288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1638612205789!5m2!1sru!2sby"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </section>
-        <section class="main-content">
-          <h2 class="visually-hidden">Полезные ссылки</h2>
-          <div class="main-content__logo logo-footer">
-            <a class="logo-footer__link" href="#">
-              <img class="logo-footer__img logo-footer__img--icon" src="img/logo/logo-footer-text.svg" width="128" height="24"
-                alt="Логотип питания Cat Energy">
-            </a>
-          </div>
-          <div class="main-content__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-content__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="copyright__text">HTML Academy</span>
-              <img class="copyright__logo" src="img/logo/logo-html.svg" width="27" height="34" alt="Логотип разработчика">
-            </a>
-          </div>
-        </section>
-      </footer>
     </main>
+    <footer class="page-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__info contacts__info--text">Приглашаем к сотрудничеству дилеров!</p>
+        <span class="contacts__info contacts__info--address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        <div class="contacts__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d999.3050981925577!2d30.32339853915693!3d59.93861013938288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1638612205789!5m2!1sru!2sby"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+      <section class="main-content">
+        <h2 class="visually-hidden">Полезные ссылки</h2>
+        <a class="main-content__link" href="#">
+          <img class="main-content__img main-content__img--icon" src="img/logo/logo-footer-text.svg" width="128" height="24"
+            alt="Логотип питания Cat Energy">
+        </a>
+        <ul class="main-content__social-list social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+          </li>
+        </ul>
+        <a class="main-content__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+          <img class="copyright__logo" src="img/logo/logo-html.svg" width="27" height="34" alt="Логотип разработчика">
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
