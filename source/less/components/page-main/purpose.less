@@ -1,24 +1,58 @@
 .purpose__wrapper {
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .purpose__list {
   margin: 0;
   padding: 0;
+  min-width: 280px;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.purpose__item--slimming {
-  background-color: @additional-basic-bg-color;
+.purpose__item {
+  box-sizing: border-box;
+  padding: 30px 33px 22px 20px;
   margin-bottom: 20px;
-}
-
-.purpose__item--gain {
   background-color: @additional-basic-bg-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 316px 57px 52px;
+    margin-bottom: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    padding: 77px 51px 59px 52px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+  }
 }
 
 .purpose__title {
   margin: 0;
+  margin-bottom: 29px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -26,10 +60,21 @@
   text-transform: uppercase;
   text-align: left;
   color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .purpose__description {
   margin: 0;
+  margin-bottom: 42px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -37,6 +82,16 @@
   line-height: 18px;
   text-align: left;
   color: @addicional-basic-color;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .purpose__link {
@@ -47,4 +102,14 @@
   text-transform: uppercase;
   text-align: left;
   color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
