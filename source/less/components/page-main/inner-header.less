@@ -1,19 +1,49 @@
 .inner-header--intro {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 696px;
+    margin-bottom: 82px;
+    background: linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)
+  ),
+      url("/source/img/index-headrer-2.png");
+    background-repeat: no-repeat;
+    background-size: 50% 694px;
+    background-position: top right;
+  }
 }
 
-.inner-header__wrapper {
+.inner-header__wrapper-intro {
   box-sizing: border-box;
-  width: 320px;
-  height: 302px;
+  min-width: 320px;
+  min-height: 302px;
   padding: 27px 35px 0 36px;
   background: linear-gradient(
     rgba(104, 183, 56, 0.85),
     rgba(104, 183, 56, 0.85)
   ),
     url("../img/index-header.png");
+  background-size: 100% 302px;
   background-repeat: no-repeat;
   color: @base-bg-color;
+
+  @media (min-width: @tablet-width) {
+    min-height: 160px;
+    padding: 38px 30px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 223px 110px;
+  }
 }
 
 .inner-header__title {
@@ -23,6 +53,23 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 440px;
+    margin-bottom: 41px;
+    margin-left: 87px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @base-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 40px;
+  }
 }
 
 .inner-header__slogan {
@@ -31,4 +78,43 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 340px;
+    margin-left: 89px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: @base-color;
+  }
+}
+
+.inner-header__wrapper-button {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    min-height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 100px;
+  }
+}
+
+.inner-header__image {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 29px;
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-162px, -509px);
+    width: 552px;
+    height: 499px;
+  }
 }

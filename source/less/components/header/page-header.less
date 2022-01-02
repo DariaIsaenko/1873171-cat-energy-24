@@ -1,3 +1,22 @@
-.page-header {
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
   background-color: @base-bg-color;
+  color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 110px;
+    background-color: transparent;
+  }
 }

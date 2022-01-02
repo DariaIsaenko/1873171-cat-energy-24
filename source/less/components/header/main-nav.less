@@ -7,11 +7,40 @@
 }
 
 .main-nav__list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.main-nav__toogle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__link {
+  text-align: center;
   color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 15px 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: @base-bg-color;
+  }
 }
