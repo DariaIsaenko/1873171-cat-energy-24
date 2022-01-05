@@ -1,23 +1,38 @@
-.form__comment {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 .form-comment__wrapper {
-  padding: 0 20px 20px 22px;
+  padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 67px;
+  }
 }
 
 .form-comment__title {
+  margin: 0;
   margin-bottom: 38px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {}
 }
 
 .form-comment__field {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 153px;
+  padding: 9px 15px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -25,4 +40,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @addicional-basic-color;
+  border: 1px solid @border-input-color;
+
+  @media (min-width: @tablet-width) {
+    min-height: 174px;
+    padding: 10px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {}
 }

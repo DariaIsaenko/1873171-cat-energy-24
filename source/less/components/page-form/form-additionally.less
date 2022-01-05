@@ -1,11 +1,13 @@
-.form__additionally {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 .form-additionally__wrapper {
-  padding: 0 20px 34px 20px;
+  padding-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 19px;
+  }
 }
 
 .form-additionaly__title {
@@ -17,19 +19,49 @@
   font-size: 24px;
   line-height: 26px;
   color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-additionally__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  }
+}
+
+.form-additionally-item {
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
 }
 
 .form-additionally-item__control-label {
+  margin-left: 46px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 59px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
