@@ -1,5 +1,15 @@
 .page-catalog__wrapper {
-  padding: 27px 0 35px;
+  padding: 27px 20px 35px;
+
+  @media (min-width: @tablet-width) {
+    padding: 39px 30px 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: auto;
+    padding: 48px 0 86px;
+  }
 }
 
 .page-catalog__title {
@@ -10,4 +20,16 @@
   font-size: 36px;
   line-height: 36px;
   color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 163px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 165px;
+  }
 }
