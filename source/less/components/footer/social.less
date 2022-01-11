@@ -1,0 +1,17 @@
+.social__link {
+  &:hover {
+    .social__link-icon {
+      stroke: @button-color;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    .social__link-icon {
+      stroke: @button-color;
+      opacity: 0.3;
+      outline: none;
+    }
+  }
+}

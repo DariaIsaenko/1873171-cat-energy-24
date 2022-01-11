@@ -16,6 +16,16 @@
   font-size: 14px;
   line-height: 18px;
 
+  &:hover {
+    background-color: @button-hover-color;
+  }
+
+  &:focus {
+    color: fade(@base-bg-color, 30%);
+    background-color: @button-hover-color;
+    outline: none;
+  }
+
   @media (min-width: @tablet-width) {
     position: absolute;
     z-index: 1;

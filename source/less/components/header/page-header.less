@@ -2,7 +2,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 20px 17px;
   background-color: @base-bg-color;
   color: @base-color;
 
@@ -31,6 +31,24 @@
     box-sizing: border-box;
     width: 100%;
     padding: 40px 110px;
+    background-color: transparent;
+  }
+}
+
+.page-header__main-nav {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  min-width: 320px;
+  background-color: @base-bg-color;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
     background-color: transparent;
   }
 }
