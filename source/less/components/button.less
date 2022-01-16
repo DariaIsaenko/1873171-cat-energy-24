@@ -99,6 +99,16 @@
 }
 
 .button--additional {
+  &:hover {
+    background-color: @button-hover-color;
+  }
+
+  &:focus {
+    color: fade(@base-bg-color, 30%);
+    background-color: @button-hover-color;
+    outline: none;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 7px 220px;
     font-size: 16px;
