@@ -1,9 +1,3 @@
-.form__data-owner {
-  margin: 0;
-  padding: 0 20px;
-  border: none;
-}
-
 .form-data-owner__wrapper {
   padding-bottom: 10px;
 
@@ -36,6 +30,7 @@
 }
 
 .form-data-owner__info {
+  position: relative;
   display: flex;
   margin-bottom: 14px;
 
@@ -71,8 +66,7 @@
 
 .form-data-owner__field {
   box-sizing: border-box;
-  padding: 0;
-  padding-left: 15px;
+  padding: 0 40px 0 15px;
   width: 100%;
   min-height: 45px;
   font-family: "Oswald", sans-serif;
@@ -82,7 +76,30 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @addicional-basic-color;
-  border: 1px solid @border-color;
+  background-color: @base-bg-color;
+  border: 1px solid @border-input-color;
+
+  &:hover {
+    box-shadow: 0 0 0 1px @border-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px @addicional-basic-color;
+    background-color: @base-bg-color;
+    outline: none;
+
+    + .form-data-owner__icon {
+      fill: @button-color;
+    }
+  }
+
+  &:invalid {
+    box-shadow: 0 0 0 2px @border-invalid-color;
+
+    + .form-data-owner__icon {
+      fill: @border-invalid-color;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 15px;
@@ -93,5 +110,23 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 18px;
+  }
+}
+
+.form-data-owner__icon {
+  &--email {
+    position: absolute;
+    top: 16px;
+    right: 11px;
+    width: 20px;
+    height: 14px;
+  }
+
+  &--fone {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
   }
 }
