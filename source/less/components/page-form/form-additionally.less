@@ -33,8 +33,12 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   }
 
   @media (min-width: @desktop-width) {
@@ -47,6 +51,20 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 42px;
+    width: 221px;
+  }
+}
+
+
+.form-additionally-item__control {
+  position: relative;
+
+  &:hover &-mark {
+    border: 1px solid @border-hover-color;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 
@@ -63,5 +81,49 @@
     margin-left: 59px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.form-additionally-item__control-mark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: @base-bg-color;
+  border: 1px solid @border-color;
+
+  &:focus {
+    box-shadow: 0 0 0 2px @addicional-basic-color;
+    outline: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -12px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-additionally-item__input:checked + .form-additionally-item__control-mark::before,
+.form-additionally-item__input:checked + .form-additionally-item__control-mark::after {
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  width: 15px;
+  height: 8px;
+  border: solid @button-color;
+  border-width: 0 0 1.5px 1.5px;
+  transform: rotate(-45deg);
+  content: "";
+  background: transparent;
+
+  @media (min-width: @tablet-width) {
+    top: 11px;
+    left: 8px;
+    width: 20px;
+    border-width: 0 0 2px 2px;
+    height: 10px;
   }
 }

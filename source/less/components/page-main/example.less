@@ -1,3 +1,7 @@
+.example--background {
+  background: linear-gradient(to top, @additional-basic-bg-color 78%, @base-bg-color 22%);
+}
+
 .example__wrapper {
   box-sizing: border-box;
   min-width: 280px;
@@ -12,13 +16,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    width: 1220px;
+    margin: auto;
+    padding: 0;
+    padding-bottom: 68px;
+    background: none;
     height: 100%;
-    background: linear-gradient(to top, @additional-basic-bg-color 78%, @base-bg-color 22%);
     display: flex;
     justify-content: space-between;
     min-width: 1220px;
-    padding: 0 110px 68px;
   }
 }
 
@@ -110,11 +116,18 @@
   color: @base-color;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 327px;
     text-align: left;
   }
 }

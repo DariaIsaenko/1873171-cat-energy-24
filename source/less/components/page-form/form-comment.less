@@ -24,8 +24,6 @@
     font-size: 36px;
     line-height: 36px;
   }
-
-  @media (min-width: @desktop-width) {}
 }
 
 .form-comment__field {
@@ -42,12 +40,20 @@
   color: @addicional-basic-color;
   border: 1px solid @border-input-color;
 
+  &:hover {
+    box-shadow: 0 0 0 1px @border-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px @addicional-basic-color;
+    background-color: @base-bg-color;
+    outline: none;
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 174px;
     padding: 10px 19px;
     font-size: 20px;
     line-height: 30px;
   }
-
-  @media (min-width: @desktop-width) {}
 }

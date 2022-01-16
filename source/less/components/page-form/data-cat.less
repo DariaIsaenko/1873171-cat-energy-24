@@ -58,6 +58,20 @@
   text-transform: uppercase;
   color: @addicional-basic-color;
 
+  &:hover {
+    box-shadow: 0 0 0 1px @border-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px @addicional-basic-color;
+    background-color: @base-bg-color;
+    outline: none;
+  }
+
+  &:invalid {
+    box-shadow: 0 0 0 2px @border-invalid-color;
+  }
+
   @media (min-width: @tablet-width) {
     padding-left: 20px;
     min-height: 52px;

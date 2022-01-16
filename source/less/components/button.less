@@ -10,17 +10,22 @@
 }
 
 .button--choose-program {
-  margin: 0 auto;
   padding: 7px 0;
   width: 280px;
   font-size: 14px;
   line-height: 18px;
 
+  &:hover {
+    background-color: @button-hover-color;
+  }
+
+  &:focus {
+    color: fade(@base-bg-color, 30%);
+    background-color: @button-hover-color;
+    outline: none;
+  }
+
   @media (min-width: @tablet-width) {
-    position: absolute;
-    z-index: 1;
-    top: 29px;
-    left: 120px;
     width: 244px;
     padding: 14px 0;
     font-style: normal;
@@ -28,22 +33,29 @@
     font-size: 20px;
     line-height: 20px;
   }
-
-  @media (min-width: @desktop-width) {
-    left: 190px;
-    transform: translateY(-220px);
-  }
 }
 
 .button--order {
   width: 100%;
+  margin: auto;
   padding: 10px 109px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
 
+  &:hover {
+    background-color: @button-hover-color;
+  }
+
+  &:focus {
+    color: fade(@base-bg-color, 30%);
+    background-color: @button-hover-color;
+    outline: none;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 10px 93px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,6 +72,16 @@
   line-height: 20px;
   color: @addicional-basic-color;
   background-color: @additional-basic-bg-color;
+
+  &:hover {
+    background-color: @button-all-hover-color;
+  }
+
+  &:focus {
+    color: fade(@addicional-basic-color, 30%);
+    background-color: @button-all-hover-color;
+    outline: none;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 20px 79px;
@@ -97,6 +119,17 @@
   font-size: 16px;
   line-height: 20px;
   border: none;
+
+  &:hover {
+    background-color: @button-hover-color;
+  }
+
+  &:focus {
+    color: fade(@base-bg-color, 30%);
+    background-color: @button-hover-color;
+    outline: none;
+  }
+
 
   @media (min-width: @tablet-width) {
     width: 100%;
