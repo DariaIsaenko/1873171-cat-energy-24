@@ -1,3 +1,8 @@
+.page-catalog--overflow {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
 .page-catalog__wrapper {
   padding: 26px 0 35px;
   border-top: 1px solid @border-page-color;
@@ -9,8 +14,8 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    margin: auto;
-    padding: 74px 0 86px;
+    margin: 0 auto;
+    padding: 74px 40px 86px;
   }
 }
 
@@ -24,6 +29,7 @@
   color: @base-color;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     margin-bottom: 163px;
     font-style: normal;
     font-weight: normal;
