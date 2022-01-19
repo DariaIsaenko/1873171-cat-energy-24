@@ -1,7 +1,8 @@
 .form-data-owner__wrapper {
-  padding-bottom: 10px;
+  padding: 0 20px 10px;
 
   @media (min-width: @tablet-width) {
+    padding: 0;
     padding-bottom: 45px;
   }
 
@@ -14,18 +15,58 @@
 }
 
 .form-data-owner__title {
+  position: relative;
+  display: inline-block;
   margin: 0;
   margin-bottom: 35px;
+  padding-right: 11px;
+  padding-left: 20px;
+  max-width: 190px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+  background-color: @base-bg-color;
   color: @base-color;
 
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 15px;
+    width: 100vw;
+    height: 2px;
+    background-color: @button-color;
+
+    @media (min-width: @tablet-width) {
+      top: 22px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
+    max-width: 515px;
+    margin-left: -39px;
     margin-bottom: 76px;
+    padding-left: 39px;
+    padding-right: 39px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 22px;
+      right: 40px;
+      width: 100vw;
+      height: 2px;
+      background-color: @button-color;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -39px;
+    padding-right: 40px;
   }
 }
 

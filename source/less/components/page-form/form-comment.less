@@ -1,28 +1,68 @@
 .form-comment__wrapper {
-  padding-bottom: 23px;
+  padding: 0 20px 23px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 65px;
+    padding: 0 0 65px;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0;
     padding-bottom: 67px;
   }
 }
 
 .form-comment__title {
+  position: relative;
+  display: inline-block;
   margin: 0;
   margin-bottom: 38px;
+  padding-right: 22px;
+  padding-left: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+  background-color: @base-bg-color;
   color: @base-color;
 
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 15px;
+    width: 100vw;
+    height: 2px;
+    background-color: @button-color;
+
+    @media (min-width: @tablet-width) {
+      top: 22px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
+    margin-left: -39px;
     margin-bottom: 76px;
+    padding-left: 39px;
+    padding-right: 38px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 22px;
+      right: 40px;
+      width: 100vw;
+      height: 2px;
+      background-color: @button-color;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -30,7 +70,8 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 153px;
-  padding: 9px 15px;
+  padding: 9px 12px 0 15px;
+  resize: none;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
