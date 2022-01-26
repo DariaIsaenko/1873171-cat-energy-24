@@ -5,17 +5,23 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
           <a class="page-header__logo-link logo" href="index.html">
-            <img class="logo__img logo__img--icon" src="img/logo/logo-header.svg" width="34" height="38"
-              alt="Логотип питания Cat Energy">
-            <img class="logo__img logo__img--text" src="img/logo/logo-header-text.svg" width="101" height="18"
-              alt="Логотип питания Cat Energy">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="logo__img logo__img--icon" src="img/logo/logo-header.svg" width="34" height="38" alt="Логотип питания Cat Energy">
+            </picture>
           </a>
+          <img class="logo__img logo__img--text" src="img/logo/logo-header-text.svg" width="101" height="18" alt="Логотип питания Cat Energy">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>

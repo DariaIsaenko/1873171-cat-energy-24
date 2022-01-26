@@ -1,65 +1,79 @@
 .inner-header--intro {
-  margin-bottom: 20px;
+  box-sizing: border-box;
+  min-height: 500px;
+  padding: 27px 0 20px;
+  background: linear-gradient(
+     rgba(104, 183, 56, 0.85),
+     rgba(104, 183, 56, 0.85)
+   ),
+    url("../img/index/page-main-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 302px;
 
-  @media (min-width: @tablet-width) {
-    min-height: 810px;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-height: 696px;
-    margin-bottom: 82px;
+  @media (min-resolution: 2dppx) {
     background: linear-gradient(
     rgba(104, 183, 56, 0.85),
     rgba(104, 183, 56, 0.85)
   ),
-      url("/source/img/index-headrer-2.png");
+      url("../img/index/page-main-background-2@2x.jpg");
+    background-size: 100% 302px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 62px 30px 0;
+    background: none;
+    min-height: 872px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 776px;
+    padding: 223px 190px 82px;
+    background: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+      url("../img/index/page-main-background.jpg");
     background-repeat: no-repeat;
     background-size: 50% 694px;
     background-position: top right;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+        url("../img/index/page-main-background@2x.jpg");
+      background-size: 50% 694px;
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
   }
 }
 
 .inner-header__wrapper-intro {
-  box-sizing: border-box;
-  min-width: 320px;
-  min-height: 302px;
-  padding: 27px 35px 0 36px;
-  background: linear-gradient(
-    rgba(104, 183, 56, 0.85),
-    rgba(104, 183, 56, 0.85)
-  ),
-    url("../img/index-header.png");
-  background-size: 100% 302px;
-  background-repeat: no-repeat;
-  color: @base-bg-color;
+  margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
-    min-height: 160px;
-    padding: 62px 30px;
-    padding-bottom: 0;
-    margin-bottom: 49px;
-    background: none;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    margin: auto;
     margin-bottom: 52px;
-    padding: 223px 80px 0;
   }
 }
 
 .inner-header__title {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  color: @base-bg-color;
 
   @media (min-width: @tablet-width) {
     max-width: 440px;
+    margin: 0;
     margin-bottom: 41px;
     margin-left: 87px;
     font-style: normal;
@@ -77,11 +91,12 @@
 }
 
 .inner-header__slogan {
-  margin: 0;
+  margin: 0 auto;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
+  color: @base-bg-color;
 
   @media (min-width: @tablet-width) {
     max-width: 340px;
@@ -100,15 +115,23 @@
 }
 
 .inner-header__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3px;
+
   @media (min-width: @tablet-width) {
     position: absolute;
+    z-index: -1;
     left: 29px;
+    transform: translateY(-35px);
+    margin: 0;
     width: 709px;
     height: 609px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
+    z-index: 1;
     left: 50%;
     transform: translate(-162px, -300px);
     width: 552px;
@@ -119,14 +142,12 @@
 .inner-header__wrapper-button {
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
-    padding: 0 30px;
     margin-left: 90px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding-left: 80px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 

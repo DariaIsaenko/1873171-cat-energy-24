@@ -5,17 +5,23 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--main">
         <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
           <a class="page-header__logo-link logo" href="index.html">
-            <img class="logo__img logo__img--icon" src="img/logo/logo-header.svg" width="34" height="38"
-              alt="Логотип питания Cat Energy">
-            <img class="logo__img logo__img--text" src="img/logo/logo-header-text.svg" width="101" height="18"
-              alt="Логотип питания Cat Energy">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="logo__img logo__img--icon" src="img/logo/logo-header.svg" width="34" height="38" alt="Логотип питания Cat Energy">
+            </picture>
           </a>
+          <img class="logo__img logo__img--text" src="img/logo/logo-header-text.svg" width="101" height="18" alt="Логотип питания Cat Energy">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -46,7 +52,11 @@
             <h1 class="inner-header__title">Функциональное питание для котов</h1>
             <p class="inner-header__slogan">Занялся собой? Займись котом!</p>
           </div>
-          <img class="inner-header__image" src="#" width="280" height="270" alt="Функциональное питание для котов Cat energy.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index/inner-header-can-desktop.png 1x, img/index/inner-header-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index/inner-header-can-tablet.png 1x, img/index/inner-header-can-tablet@2x.png 2x">
+            <img class="inner-header__image" src="img/index/inner-header-can-mobile.png" srcset="img/index/inner-header-can-mobile@2x.png 2x" width="280" height="270" alt="Функциональное питание для котов Cat energy.">
+          </picture>
           <div class="inner-header__wrapper-button">
             <a class="inner-header__button button button--choose-program" href="form.html">Подобрать программу</a>
           </div>
@@ -115,24 +125,22 @@
               </div>
             </div>
             <div class="example__slider comparison">
-              <div class="example__images example__images--before">
+              <div class="example__images example__images--before-after">
                 <picture>
-                  <img class="example__image" src="#" width="280" height="232" alt="Кот до использования питания Cat Energy">
-                </picture>
-              </div>
-              <div class="example__images example__images--after">
-                <picture>
-                  <img class="example__image" src="#" alt="Кот после использования питания Cat Energy">
+                  <source media="(min-width: 768px)" srcset="img/index/cat-tablet.png 1x, img/index/cat-tablet@2x.png 2x">
+                  <img class="example__image" src="img/index/before-cat-mobile.png" srcset="img/index/before-cat-mobile.png 2x" width="280" height="232" alt="Кот до использования питания Cat Energy">
                 </picture>
               </div>
               <div class="example__scale scale">
-                <span class="scale__text">Было</span>
-                <div class="scale__range-bar" style="width: 36px;">
-                  <button class="scale__toggle" type="button">
-                    <span class="visually-hidden">Переключить изображение</span>
-                  </button>
+                <span class="scale__text scale__text--before">Было</span>
+                <div class="scale__range">
+                  <div class="scale__range-bar" style="width: 50%;">
+                    <button class="scale__toggle" type="button">
+                      <span class="visually-hidden">Переключить изображение</span>
+                    </button>
+                  </div>
                 </div>
-                <span class="scale__text">Стало</span>
+                <span class="scale__text scale__text--after">Стало</span>
               </div>
             </div>
           </div>

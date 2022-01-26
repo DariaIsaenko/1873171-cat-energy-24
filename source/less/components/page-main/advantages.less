@@ -2,7 +2,7 @@
   padding: 0 20px 25px;
 
   @media (min-width: @tablet-width) {
-    padding: 25px 30px 47px;
+    padding: 25px 30px 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -78,7 +78,7 @@
     min-height: 280px;
     max-width: 250px;
     padding-top: 111px;
-    margin-bottom: 37px;
+    margin-bottom: 0;
     background-size: 80px 80px;
 
     &--leaf {
@@ -164,6 +164,10 @@
         color: @additional-basic-bg-color;
       }
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 240px;
   }
 }
 

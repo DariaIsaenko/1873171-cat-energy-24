@@ -1,18 +1,19 @@
 .example--background {
-  background: linear-gradient(to top, @additional-basic-bg-color 78%, @base-bg-color 22%);
+  background: linear-gradient(to top, @additional-basic-bg-color 75%, @base-bg-color 22%);
 }
 
 .example__wrapper {
   box-sizing: border-box;
   min-width: 280px;
-  padding: 0 20px 40px;
+  padding: 25px 20px 40px;
   background-color: @additional-bg-color;
 
   @media (min-width: @tablet-width) {
     min-width: 708px;
-    padding: 0;
+    padding: 43px 0 60px;
     padding-bottom: 60px;
-    background: linear-gradient(to top, @additional-bg-color 57%, @base-bg-color 43%);
+    background: linear-gradient(to top, @additional-bg-color 44%, @base-bg-color 43%);
+    border-top: 1px solid @border-color-menu;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,13 +26,16 @@
     display: flex;
     justify-content: space-between;
     min-width: 1220px;
+    border: none;
   }
 }
 
 .example__wrapper-intro {
+  margin-bottom: 40px;
+
   @media (min-width: @tablet-width) {
-    padding: 43px 30px 72px;
-    background-color: @base-bg-color;
+    padding: 0 30px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,6 +61,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 146px;
+    margin-top: 43px;
   }
 }
 
@@ -86,22 +91,23 @@
 
 .example__list {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 24px;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
+    width: 370px;
     margin-right: auto;
-    justify-content: start;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
-    margin-bottom: 35px;
+    justify-content: space-between;
+    margin-bottom: 60px;
   }
 }
 
@@ -140,18 +146,37 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
-    justify-content: end;
     min-width: 591px;
+  }
+}
+
+.example__images {
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.example__image {
+  display: block;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 592px;
+    height: 511px;
   }
 }
 
 .example__wrapper-information {
   @media (min-width: @tablet-width) {
     display: flex;
+    margin-bottom: 80px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
+    margin-bottom: 0;
   }
 }
 
@@ -165,5 +190,9 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }

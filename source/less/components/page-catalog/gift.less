@@ -9,10 +9,20 @@
     rgba(104, 183, 56, 0.85),
     rgba(104, 183, 56, 0.85)
   ),
-    url("../img/catalog/gift-catalog.png");
+    url("../img/catalog/gift-1.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   color: @base-bg-color;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)
+  ),
+      url("../img/catalog/gift-1@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -22,8 +32,18 @@
     rgba(104, 183, 56, 0.85),
     rgba(104, 183, 56, 0.85)
   ),
-      url("../img/catalog/gift-catalog-2.png");
+      url("../img/catalog/gift-2.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)
+  ),
+        url("../img/catalog/gift-2@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -34,9 +54,19 @@
     rgba(104, 183, 56, 0.85),
     rgba(104, 183, 56, 0.85)
   ),
-      url("../img/catalog/gift-catalog-3.png");
+      url("../img/catalog/gift-3.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)
+  ),
+        url("../img/catalog/gift-3@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
   }
 }
 
