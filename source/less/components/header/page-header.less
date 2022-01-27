@@ -24,14 +24,18 @@
 
 .page-header__logo-link {
   margin-left: 20px;
-  display: flex;
-  justify-content: space-between;
-  width: 191px;
   align-items: center;
+
+  &:hover .logo__img--icon {
+    opacity: 60%;
+  }
+
+  &:focus .logo__img--icon {
+    opacity: 30%;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    width: 174px;
   }
 }
 

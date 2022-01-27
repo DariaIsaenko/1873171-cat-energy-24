@@ -1,22 +1,26 @@
 .information__item {
+  position: relative;
   box-sizing: border-box;
+  width: 124px;
+  padding-top: 12px;
+  padding-bottom: 9px;
   border: 1px solid @border-color;
   border-radius: 3px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 42px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 42px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 162px;
   }
 }
 
 .information__number {
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
   color: @base-color;
 
   @media (min-width: @tablet-width) {
@@ -26,16 +30,30 @@
 }
 
 .information__description {
+  position: absolute;
+  bottom: -12px;
+  left: 18px;
   margin: 0;
+  width: 82px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  background-color: @additional-bg-color;
   color: @addicional-basic-color;
 
   @media (min-width: @tablet-width) {
+    bottom: -7px;
+    left: 8px;
+    width: 142px;
     font-size: 14px;
     line-height: 14px;
+    background-color: @base-bg-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @additional-basic-bg-color;
   }
 }
