@@ -1,8 +1,8 @@
 .advantages__wrapper {
-  padding: 0 20px 25px;
+  padding: 0 20px 29px;
 
   @media (min-width: @tablet-width) {
-    padding: 25px 30px 10px;
+    padding: 15px 105px 6px 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -19,8 +19,10 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 37px;
   }
 }
 
@@ -90,7 +92,7 @@
       &::after {
         position: absolute;
         z-index: -1;
-        top: -45px;
+        top: -40px;
         right: 20px;
         content: "1";
         font-family: "Oswald", sans-serif;
@@ -111,7 +113,7 @@
       &::after {
         position: absolute;
         z-index: -1;
-        top: -45px;
+        top: -40px;
         right: 2px;
         content: "2";
         font-family: "Oswald", sans-serif;
@@ -133,7 +135,7 @@
         position: absolute;
         z-index: -1;
         top: -40px;
-        right: -2px;
+        right: 0;
         content: "3";
         font-family: "Oswald", sans-serif;
         font-style: normal;
@@ -154,7 +156,7 @@
         position: absolute;
         z-index: -1;
         top: -40px;
-        right: -2px;
+        right: 0;
         content: "4";
         font-family: "Oswald", sans-serif;
         font-style: normal;

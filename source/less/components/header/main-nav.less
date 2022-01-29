@@ -2,12 +2,21 @@
   position: relative;
   margin-right: 20px;
   margin-left: auto;
-  grid-column: 3/4;
+  grid-column: 2/3;
   width: 34px;
   height: 38px;
   background-color: @base-bg-color;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:focus {
+    opacity: 30%;
+    outline: none;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -30,12 +39,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 460px;
+    width: 442px;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    width: 496px;
+    width: 480px;
     background-color: transparent;
   }
 }
@@ -154,6 +163,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+
     &--main {
       font-style: normal;
       font-weight: normal;
@@ -178,7 +192,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 9px;
   right: 0;
   width: 24px;
   height: 1.5px;

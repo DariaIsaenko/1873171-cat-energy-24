@@ -25,12 +25,17 @@
 .page-header__logo-link {
   margin-left: 20px;
   align-items: center;
+  transform: translate(1px, -2px);
 
-  &:hover .logo__img--icon {
+  &:hover .logo__icon {
     opacity: 60%;
   }
 
-  &:focus .logo__img--icon {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .logo__icon {
     opacity: 30%;
   }
 
