@@ -1,6 +1,18 @@
+.social__item {
+  min-width: 50px;
+  min-height: 22px;
+}
+
 .social__link {
+  position: relative;
+  min-height: 20px;
+  min-width: 16px;
+  padding: 0 15px;
+
   &--vkontakte {
     .social__link-icon {
+      position: absolute;
+      left: 8px;
       width: 23px;
       height: 16px;
     }
@@ -8,6 +20,8 @@
 
   &--instagram {
     .social__link-icon {
+      position: absolute;
+      left: 17px;
       width: 16px;
       height: 16px;
     }
@@ -15,14 +29,20 @@
 
   &--facebook {
     .social__link-icon {
+      color: @icon-color;
       width: 22px;
       height: 22px;
     }
   }
 
   @media (min-width: @tablet-width) {
+    padding: 0 12px;
+
     &--vkontakte {
       .social__link-icon {
+        top: -1px;
+        right: -3px;
+        left: auto;
         width: 30px;
         height: 22px;
       }
@@ -30,6 +50,9 @@
 
     &--instagram {
       .social__link-icon {
+        left: auto;
+        top: -1px;
+        right: -3px;
         width: 23px;
         height: 23px;
       }
@@ -37,6 +60,9 @@
 
     &--facebook {
       .social__link-icon {
+        position: absolute;
+        top: -6px;
+        right: -2px;
         width: 28px;
         height: 33px;
       }
@@ -46,6 +72,7 @@
   &:hover {
     .social__link-icon {
       stroke: @button-color;
+      color: @button-color;
     }
   }
 

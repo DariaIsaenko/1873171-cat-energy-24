@@ -96,12 +96,13 @@
   color: @addicional-basic-color;
 
   @media (min-width: @tablet-width) {
+    margin-right: 20px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 20px;
+    margin-right: 18px;
   }
 }
 
@@ -130,7 +131,8 @@
     outline: none;
 
     + .form-data-owner__icon {
-      fill: @button-color;
+      stroke: @button-color;
+      color: @button-color;
     }
   }
 
@@ -138,12 +140,13 @@
     box-shadow: 0 0 0 2px @border-invalid-color;
 
     + .form-data-owner__icon {
-      fill: @border-invalid-color;
+      stroke: @border-invalid-color;
+      color: @border-invalid-color;
     }
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 15px;
+    padding-left: 16px;
     min-height: 52px;
     font-size: 20px;
     line-height: 30px;
@@ -155,12 +158,25 @@
 }
 
 .form-data-owner__icon {
+  color: @addicional-color;
+  stroke-width: 1.3px;
+
   &--email {
     position: absolute;
     top: 16px;
     right: 11px;
     width: 20px;
-    height: 14px;
+    height: 15px;
+
+    @media (min-width: @tablet-width) {
+      top: 18px;
+      right: 17px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 19px;
+      top: 17px;
+    }
   }
 
   &--fone {
@@ -169,5 +185,14 @@
     right: 10px;
     width: 20px;
     height: 20px;
+
+    @media (min-width: @tablet-width) {
+      top: 15px;
+      right: 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 16px;
+    }
   }
 }
