@@ -12,6 +12,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
+import imagemin from 'gulp-imagemin';
 
 // Styles
 
@@ -48,7 +49,15 @@ const script = () => {
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(squoosh)
+  .pipe(imagemin([
+    imagemin.mozjpeg({
+      progressive: true
+    }),
+    imagemin.optipng({
+      optimizationLevel: 3
+    }),
+    imagemin.svgo()
+  ]))
   .pipe(gulp.dest('build/img'))
 };
 
