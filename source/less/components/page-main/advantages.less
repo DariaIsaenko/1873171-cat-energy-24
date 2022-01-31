@@ -6,7 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 41px 110px 26px;
+    padding: 41px 0 26px;
     width: 1220px;
     margin: auto;
   }
@@ -41,7 +41,7 @@
   &--leaf {
     &::before {
       position: absolute;
-      content: url("../img/icon/leaf-icon.svg");
+      content: url("../img/icons/leaf-icon.svg");
       top: 14px;
       left: 15px;
     }
@@ -50,7 +50,7 @@
   &--tub {
     &::before {
       position: absolute;
-      content: url("../img/icon/tub-icon.svg");
+      content: url("../img/icons/tub-icon.svg");
       top: 13px;
       left: 15px;
     }
@@ -59,7 +59,7 @@
   &--eat {
     &::before {
       position: absolute;
-      content: url("../img/icon/eat-icon.svg");
+      content: url("../img/icons/eat-icon.svg");
       top: 15px;
       left: 18px;
     }
@@ -68,7 +68,7 @@
   &--alarm {
     &::before {
       position: absolute;
-      content: url("../img/icon/alarm-icon.svg");
+      content: url("../img/icons/alarm-icon.svg");
       top: 13px;
       left: 14px;
     }
@@ -204,9 +204,17 @@
   line-height: 18px;
   color: @addicional-basic-color;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+
+    & br {
+      display: inline;
+    }
   }
 
   @media (min-width: @desktop-width) {

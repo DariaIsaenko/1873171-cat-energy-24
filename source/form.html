@@ -5,7 +5,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="source/favicon.ico">
     <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
@@ -15,18 +15,11 @@
       <div class="page-header__wrapper">
         <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
           <a class="page-header__logo-link logo" href="index.html">
-            <svg class="logo__icon logo__icon--desktop" width="202" height="59">
-              <use href="img/sprite.svg#logo-desktop"></use>
-            </svg>
-            <svg class="logo__icon logo__icon--tablet" width="174" height="52">
-              <use href="img/sprite.svg#logo-tablet"></use>
-            </svg>
-            <svg class="logo__icon logo__icon--mobile" width="33" height="38">
-              <use href="img/sprite.svg#logo-mobile"></use>
-            </svg>
-            <svg class="logo__icon logo__icon--text" width="101" height="18">
-              <use href="img/sprite.svg#logo-text"></use>
-            </svg>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/icons/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg">
+              <img class="logo__icon" src="img/icons/logo-mobile.svg" width="191" height="38" alt="Питание для котов Кэт Энерджи.">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -109,14 +102,14 @@
                 <span class="form-data-owner__field-name">E-mail:*</span>
                 <input class="form-data-owner__field" type="email" placeholder="kuklachev@gmail.com" name="email">
                 <svg class="form-data-owner__icon form-data-owner__icon--email" width="20" height="15">
-                  <use href="img/sprite.svg#icon-email"></use>
+                  <use href="img/sprite.svg#email-icon"></use>
                 </svg>
               </label>
               <label class="form-data-owner__info">
                 <span class="form-data-owner__field-name">Телефон:*</span>
                 <input class="form-data-owner__field" type="tel" placeholder="8 (960) 900-60-90" pattern="8\s{0,1}[\(]\d{3}[\)]\s{0,1}\d{3}[\-]\d{2}[\-]\d{2}" name="phone">
                 <svg class="form-data-owner__icon form-data-owner__icon--fone" width="20" height="21">
-                  <use href="img/sprite.svg#icon-phone"></use>
+                  <use href="img/sprite.svg#phone-icon"></use>
                 </svg>
               </label>
             </div>
@@ -191,28 +184,28 @@
           <h2 class="visually-hidden">Полезные ссылки</h2>
           <a class="main-content__link" href="#">
             <svg class="main-content__link-logo" width="128" height="24">
-              <use href="img/sprite.svg#icon-logo"></use>
+              <use href="img/sprite.svg#logo-footer-text"></use>
             </svg>
           </a>
           <ul class="main-content__social-list social">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy в Vkontakte.">
                 <svg class="social__link-icon" width="23" height="16">
-                  <use href="img/sprite.svg#social-vkontakte"></use>
+                  <use href="img/sprite.svg#vkontakte-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Страница HTML Academy в Instagram.">
                 <svg class="social__link-icon" width="16" height="16">
-                  <use href="img/sprite.svg#social-instagram"></use>
+                  <use href="img/sprite.svg#instagram-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Страница HTML Academy на Facebook.">
                 <svg class="social__link-icon" width="22" height="22">
-                  <use href="img/sprite.svg#social-facebook"></use>
+                  <use href="img/sprite.svg#facebook-icon"></use>
                 </svg>
               </a>
             </li>
@@ -220,27 +213,12 @@
           <a class="main-content__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__logo" width="27" height="34">
-              <use href="img/sprite.svg#logo-copyright"></use>
+              <use href="img/sprite.svg#htmlacademy-logo"></use>
             </svg>
           </a>
         </div>
       </section>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

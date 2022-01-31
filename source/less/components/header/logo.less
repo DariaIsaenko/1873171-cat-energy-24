@@ -1,38 +1,17 @@
-.logo {
-  &__icon--text {
-    transform: translate(53px, -7px);
-  }
-
-  &__icon--tablet {
-    display: none;
-  }
-
-  &__icon--desktop {
-    display: none;
-  }
+.logo__icon {
+  transform: translateX(-1px);
+  width: 191px;
+  height: 38px;
 
   @media (min-width: @tablet-width) {
-    &__icon--mobile {
-      display: none;
-    }
-
-    &__icon--text {
-      display: none;
-    }
-
-    &__icon--tablet {
-      display: block;
-    }
+    transform: translate(-1px, 2px);
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: @desktop-width) {
-    &__icon--tablet {
-      display: none;
-    }
-
-    &__icon--desktop {
-      display: block;
-      transform: translate(0, 2px);
-    }
+    transform: translate(-1px, 4px);
+    width: 202px;
+    height: 59px;
   }
 }
