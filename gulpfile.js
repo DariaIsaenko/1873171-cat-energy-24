@@ -8,11 +8,11 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
+import imagemin from 'gulp-imagemin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
-import imagemin from 'gulp-imagemin';
 
 // Styles
 
@@ -31,7 +31,7 @@ export const styles = () => {
 
 // HTML
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
@@ -176,4 +176,5 @@ export default gulp.series(
   gulp.series(
     server,
     watcher
-  ));
+  )
+);

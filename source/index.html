@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="source/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="source/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="source/favicon.ico">
     <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
@@ -13,6 +15,10 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--main">
+        <!-- модификатор main-nav--opened для открытого состояния
+             модификатор main-nav--nojs для состояния без js
+             модификатор main-nav--closed для закрытого состояния
+        -->
         <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
           <a class="page-header__logo-link logo" href="index.html">
             <picture>
@@ -160,9 +166,7 @@
             <span class="contacts__info contacts__info--address">ул. Большая Конюшенная, д. 19/8 <span> Санкт-Петербург</span></span>
           </div>
           <div class="contacts__map">
-            <iframe class="contacts__map-contacts"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d999.3050981925577!2d30.32339853915693!3d59.93861013938288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1638612205789!5m2!1sru!2sby"
-              style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="contacts__map-contacts" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2072506006266!2d30.31867003361082!3d59.938719169054124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1643699140859!5m2!1sru!2sby" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" title="Офис компании по адресу улица Большая Конюшенная, д. 19/8, Санкт-Петербург."></iframe>
           </div>
         </div>
       </section>

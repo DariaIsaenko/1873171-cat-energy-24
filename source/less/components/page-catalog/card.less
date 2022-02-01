@@ -28,6 +28,19 @@
   justify-self: center;
   align-self: center;
 
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .card__image {
+    opacity: 0.6;
+  }
+
+  &:focus .card__image {
+    opacity: 0.3;
+    outline: none;
+  }
+
   @media (min-width: @tablet-width) {
     transform: translate(-1px, 1px);
     align-self: center;
@@ -50,6 +63,15 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @addicional-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
 
   @media (min-width: @tablet-width) {
     align-self: center;
