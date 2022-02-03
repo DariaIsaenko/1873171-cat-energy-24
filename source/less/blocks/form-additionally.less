@@ -95,10 +95,6 @@
   &:hover &-mark {
     border: 1px solid @border-hover-color;
   }
-
-  &:disabled {
-    opacity: 0.3;
-  }
 }
 
 .form-additionally-item__control-label {
@@ -117,10 +113,21 @@
   }
 }
 
+.form-additionally-item__input:disabled {
+  + .form-additionally-item__control-mark {
+    outline: none;
+    opacity: 0.3;
+
+    + .form-additionally-item__control-label {
+      opacity: 0.3;
+    }
+  }
+}
+
 .form-additionally-item__control-mark {
   position: absolute;
-  top: -6px;
-  left: 0;
+  top: -8px;
+  left: -1px;
   width: 30px;
   height: 30px;
   background-color: @base-bg-color;

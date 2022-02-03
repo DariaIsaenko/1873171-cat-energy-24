@@ -33,7 +33,7 @@
 .purpose__item {
   position: relative;
   box-sizing: border-box;
-  padding: 30px 33px 22px 20px;
+  padding: 30px 33px 21px 20px;
   margin-bottom: 20px;
   background-color: @additional-basic-bg-color;
 
@@ -184,20 +184,24 @@
 }
 
 .purpose__description {
+  padding-bottom: 22px;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 19px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
+  border-bottom: 1px solid @border-page-color;
   color: @addicional-basic-color;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 0;
     margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -206,6 +210,9 @@
 }
 
 .purpose__link {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -213,24 +220,53 @@
   text-transform: uppercase;
   text-align: left;
   color: @base-color;
-  background-image: url("../img/icons/arrow-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 100px;
+
+  &::after {
+    position: absolute;
+    content: url("../img/icons/arrow-icon.svg");
+    top: -2px;
+    right: -25px;
+  }
 
   &:hover {
-    background-image: url("../img/icons/arrow-icon-hover.svg");
+    &::after {
+      content: url("../img/icons/arrow-icon-hover.svg");
+      right: -33px;
+    }
   }
 
   &:focus {
-    background-image: url("../img/icons/arrow-icon-hover.svg");
     opacity: 0.3;
     outline: none;
+
+    &::after {
+      content: url("../img/icons/arrow-icon-hover.svg");
+      right: -33px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     background-position: 132px;
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: -4px;
+      right: -35px;
+    }
+
+    &:hover {
+      &::after {
+        top: -4px;
+        right: -43px;
+      }
+    }
+
+    &:focus {
+      &::after {
+        right: -43px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {

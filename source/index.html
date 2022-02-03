@@ -129,7 +129,7 @@
                     <dd class="information__description">затрачено времени</dd>
                   </div>
                 </dl>
-                <p class="example__text">Затраты на питание:<span class="example__sum">15 000 РУБ.</span></p>
+                <p class="example__text">Затраты на питание:<span class="example__sum"> 15 000 РУБ.</span></p>
               </div>
             </div>
             <div class="example__slider comparison">
@@ -142,7 +142,7 @@
                 </picture>
               </div>
               <div class="example__scale scale">
-                <span class="scale__text scale__text--before">Было</span>
+                <button class="scale__button scale__button--before">Было</button>
                 <div class="scale__range">
                   <div class="scale__range-bar" style="width: 50%;">
                     <button class="scale__toggle" type="button">
@@ -150,14 +150,14 @@
                     </button>
                   </div>
                 </div>
-                <span class="scale__text scale__text--after">Стало</span>
+                <button class="scale__button scale__button--after">Стало</button>
               </div>
             </div>
           </div>
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--wrapper-index">
       <section class="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__wrapper-address">
@@ -173,40 +173,46 @@
       <section class="main-content main-content--index-background">
         <div class="main-content__wrapper">
           <h2 class="visually-hidden">Полезные ссылки</h2>
-          <a class="main-content__link" href="#">
-            <svg class="main-content__link-logo" width="128" height="24">
-              <use href="img/sprite.svg#logo-footer-text"></use>
-            </svg>
-          </a>
-          <ul class="main-content__social-list social">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy в Vkontakte.">
-                <svg class="social__link-icon" width="23" height="16">
-                  <use href="img/sprite.svg#vkontakte-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Страница HTML Academy в Instagram.">
-                <svg class="social__link-icon" width="16" height="16">
-                  <use href="img/sprite.svg#instagram-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Страница HTML Academy на Facebook.">
-                <svg class="social__link-icon" width="22" height="22">
-                  <use href="img/sprite.svg#facebook-icon"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a class="main-content__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт разработчика HTML Academy.">
-            <span class="copyright__text">HTML Academy</span>
-            <svg class="copyright__logo" width="27" height="34">
-              <use href="img/sprite.svg#htmlacademy-logo"></use>
-            </svg>
-          </a>
+          <div class="main-content__wrapper-link">
+            <a class="main-content__link" href="#">
+              <svg class="main-content__link-logo" width="128" height="24">
+                <use href="img/sprite.svg#logo-footer-text"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="main-content__wrapper-social">
+            <ul class="main-content__social-list social">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy в Vkontakte.">
+                  <svg class="social__link-icon" width="23" height="16">
+                    <use href="img/sprite.svg#vkontakte-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Страница HTML Academy в Instagram.">
+                  <svg class="social__link-icon" width="16" height="16">
+                    <use href="img/sprite.svg#instagram-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Страница HTML Academy на Facebook.">
+                  <svg class="social__link-icon" width="22" height="22">
+                    <use href="img/sprite.svg#facebook-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-content__wrapper-copyright">
+            <a class="main-content__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт разработчика HTML Academy.">
+              <span class="copyright__text">HTML Academy</span>
+              <svg class="copyright__logo" width="27" height="34">
+                <use href="img/sprite.svg#htmlacademy-logo"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
     </footer>

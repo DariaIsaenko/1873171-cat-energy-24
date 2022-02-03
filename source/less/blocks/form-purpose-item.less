@@ -4,10 +4,6 @@
   &:hover &-mark {
     border: 1px solid @border-hover-color;
   }
-
-  &:disabled {
-    opacity: 0.3;
-  }
 }
 
 .form-purpose-item__control-label {
@@ -26,6 +22,17 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 61px;
+  }
+}
+
+.form-purpose-item__input:disabled {
+  + .form-purpose-item__control-mark {
+    outline: none;
+    opacity: 0.3;
+
+    + .form-purpose-item__control-label {
+      opacity: 0.3;
+    }
   }
 }
 

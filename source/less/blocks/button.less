@@ -54,6 +54,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    max-width: 249px;
     padding: 10px 93px;
     margin: 0;
   }
@@ -98,31 +99,6 @@
   }
 }
 
-.button--additional {
-  &:hover {
-    background-color: @button-hover-color;
-  }
-
-  &:focus {
-    color: fade(@base-bg-color, 30%);
-    background-color: @button-hover-color;
-    outline: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding: 7px 220px;
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-    padding: 7px 26px;
-    width: 244px;
-    max-width: 244px;
-  }
-}
-
 .button--send-application {
   box-sizing: border-box;
   min-height: 40px;
@@ -148,7 +124,6 @@
     min-height: 52px;
     padding: 13px 45px;
     font-size: 20px;
-    line-height: 0px;
   }
 
   @media (min-width: @desktop-width) {

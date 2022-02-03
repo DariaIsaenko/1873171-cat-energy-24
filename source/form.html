@@ -78,21 +78,21 @@
                   <li class="form-purpose__item form-purpose-item">
                     <label class="form-purpose-item__control">
                       <input class="visually-hidden form-purpose-item__input" type="radio" name="purpose" value="slimming"
-                        checked>
+                        checked tabindex="-1">
                       <span class="form-purpose-item__control-mark" tabindex="0"></span>
                       <span class="form-purpose-item__control-label">Похудение</span>
                     </label>
                   </li>
                   <li class="form-purpose__item form-purpose-item">
                     <label class="form-purpose-item__control">
-                      <input class="visually-hidden form-purpose-item__input" type="radio" name="purpose" value="gain">
+                      <input class="visually-hidden form-purpose-item__input" type="radio" name="purpose" value="gain" tabindex="-1">
                       <span class="form-purpose-item__control-mark" tabindex="0"></span>
                       <span class="form-purpose-item__control-label">Набор массы</span>
                     </label>
                   </li>
                   <li class="form-purpose__item form-purpose-item">
                     <label class="form-purpose-item__control">
-                      <input class="visually-hidden form-purpose-item__input" type="radio" name="purpose" value="help">
+                      <input class="visually-hidden form-purpose-item__input" type="radio" name="purpose" value="help" tabindex="-1">
                       <span class="form-purpose-item__control-mark" tabindex="0"></span>
                       <span class="form-purpose-item__control-label">Не знаю (Нужен ваш совет)</span>
                     </label>
@@ -134,28 +134,28 @@
               <ul class="form-additionally__list">
                 <li class="form-additionally__item form-additionally-item">
                   <label class="form-additionally-item__control">
-                    <input class="visually-hidden form-additionally-item__input" type="checkbox" name="sweetener" checked>
+                    <input class="visually-hidden form-additionally-item__input" type="checkbox" name="sweetener" checked tabindex="-1">
                     <span class="form-additionally-item__control-mark" tabindex="0"></span>
                     <span class="form-additionally-item__control-label">Cахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form-additionally__item form-additionally-item">
                   <label class="form-additionally-item__control">
-                    <input class="visually-hidden form-additionally-item__input" type="checkbox" name="water">
+                    <input class="visually-hidden form-additionally-item__input" type="checkbox" name="water" tabindex="-1">
                     <span class="form-additionally-item__control-mark" tabindex="0"></span>
                     <span class="form-additionally-item__control-label">Питьевая вода</span>
                   </label>
                 </li>
                 <li class="form-additionally__item form-additionally-item">
                   <label class="form-additionally-item__control">
-                    <input class="visually-hidden form-additionally-item__input" type="checkbox" name="milk">
+                    <input class="visually-hidden form-additionally-item__input" type="checkbox" name="milk" tabindex="-1">
                     <span class="form-additionally-item__control-mark" tabindex="0"></span>
                     <span class="form-additionally-item__control-label">Молоко</span>
                   </label>
                 </li>
                 <li class="form-additionally__item form-additionally-item">
                   <label class="form-additionally-item__control">
-                    <input class="visually-hidden form-additionally-item__input" type="checkbox" name="vitamins">
+                    <input class="visually-hidden form-additionally-item__input" type="checkbox" name="vitamins" tabindex="-1">
                     <span class="form-additionally-item__control-mark" tabindex="0"></span>
                     <span class="form-additionally-item__control-label">Витамины</span>
                   </label>
@@ -186,40 +186,46 @@
       <section class="main-content">
         <div class="main-content__wrapper">
           <h2 class="visually-hidden">Полезные ссылки</h2>
-          <a class="main-content__link" href="#">
-            <svg class="main-content__link-logo" width="128" height="24">
-              <use href="img/sprite.svg#logo-footer-text"></use>
-            </svg>
-          </a>
-          <ul class="main-content__social-list social">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy в Vkontakte.">
-                <svg class="social__link-icon" width="23" height="16">
-                  <use href="img/sprite.svg#vkontakte-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Страница HTML Academy в Instagram.">
-                <svg class="social__link-icon" width="16" height="16">
-                  <use href="img/sprite.svg#instagram-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Страница HTML Academy на Facebook.">
-                <svg class="social__link-icon" width="22" height="22">
-                  <use href="img/sprite.svg#facebook-icon"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a class="main-content__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
-            <span class="copyright__text">HTML Academy</span>
-            <svg class="copyright__logo" width="27" height="34">
-              <use href="img/sprite.svg#htmlacademy-logo"></use>
-            </svg>
-          </a>
+          <div class="main-content__wrapper-link">
+            <a class="main-content__link" href="#">
+              <svg class="main-content__link-logo" width="128" height="24">
+                <use href="img/sprite.svg#logo-footer-text"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="main-content__wrapper-social">
+            <ul class="main-content__social-list social">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy в Vkontakte.">
+                  <svg class="social__link-icon" width="23" height="16">
+                    <use href="img/sprite.svg#vkontakte-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Страница HTML Academy в Instagram.">
+                  <svg class="social__link-icon" width="16" height="16">
+                    <use href="img/sprite.svg#instagram-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Страница HTML Academy на Facebook.">
+                  <svg class="social__link-icon" width="22" height="22">
+                    <use href="img/sprite.svg#facebook-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-content__wrapper-copyright">
+            <a class="main-content__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
+              <span class="copyright__text">HTML Academy</span>
+              <svg class="copyright__logo" width="27" height="34">
+                <use href="img/sprite.svg#htmlacademy-logo"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
     </footer>

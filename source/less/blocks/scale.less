@@ -1,3 +1,59 @@
+.scale__button {
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @base-color;
+  border: none;
+  background-color: @additional-bg-color;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--before {
+    margin-right: 14px;
+  }
+
+  &--after {
+    margin-left: 12px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px dotted @base-color;
+    font-size: 20px;
+    line-height: 30px;
+
+    &:hover {
+      border-bottom: 1px solid @base-color;
+    }
+
+    &:focus {
+      border-bottom: 1px solid transparent;
+      outline: none;
+    }
+
+    &--before {
+      margin-right: 23px;
+    }
+
+    &--after {
+      margin-left: 23px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: @additional-basic-bg-color;
+  }
+}
+
+
 .scale__range {
   box-sizing: border-box;
   padding: 3px 6px;
@@ -41,6 +97,17 @@
     background-color: @base-bg-color;
     border: 1px solid @border-color;
     border-radius: 50%;
+    box-shadow: 0 1px 3px fade(@base-color, 16%);
+
+    &:hover {
+      box-shadow: 0 2px 4px fade(@base-color, 19%);
+    }
+
+    &:focus {
+      border: 1px solid @button-color;
+      box-shadow: 0 3px 5px fade(@base-color, 20%);
+      outline: none;
+    }
 
     &::before {
       position: absolute;

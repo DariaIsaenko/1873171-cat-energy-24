@@ -4,13 +4,10 @@
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    bottom: 107px;
-    left: 38px;
     display: flex;
     flex-direction: column;
-    min-width: 252px;
-    margin: 0;
+    max-width: 252px;
+    margin: 0 auto 33px;
     padding: 0;
   }
 
@@ -42,13 +39,16 @@
   }
 
   @media (min-width: @tablet-width) {
-    transform: translate(-1px, 1px);
+    position: relative;
     align-self: center;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
+    height: 127px;
+    width: 161px;
+    padding: 0 10px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 42px;
+    margin-bottom: 36px;
   }
 }
 
@@ -83,6 +83,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 17px;
     font-size: 20px;
     line-height: 21px;
   }
@@ -114,6 +115,10 @@
   @media (min-width: @tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 6px;
+  }
 }
 
 .card__item {
@@ -121,12 +126,13 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    padding: 7px 0 9px;
+    padding: 7px 0 8px;
     border-bottom: 1px solid @border-color;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    padding: 7px 0 8px;
   }
 }
 
@@ -152,6 +158,20 @@
   }
 }
 
+.card__image {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-1px, -11px);
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translate(-4px, -19px);
+  }
+}
+
 .card__button {
-  width: 280px;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
 }
