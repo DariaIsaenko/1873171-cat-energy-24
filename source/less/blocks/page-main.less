@@ -1,0 +1,17 @@
+.page-main__wrapper {
+  &::before {
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      right: 0;
+      background: linear-gradient(-90deg, rgba(104, 183, 56, 0.85) 100%, #ffffff 50%);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    overflow: hidden;
+  }
+}

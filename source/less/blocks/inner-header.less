@@ -34,20 +34,13 @@
       position: absolute;
       content: "";
       background-image: url("../img/index/page-main-background.jpg");
+      background-size: contain;
       top: 0;
       right: 0;
-      left: auto;
+      left: 50%;
       margin: 0;
-      width: 720px;
+      width: 100%;
       height: 694px;
-
-      @media (min-resolution: 2dppx) {
-        content: "";
-        background-image: url("../img/index/page-main-background@2x.jpg");
-        background-size: contain;
-        width: 720px;
-        height: 694px;
-      }
     }
   }
 
@@ -58,11 +51,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
     min-height: 694px;
     margin: 0 auto 82px;
     padding: 223px 190px 82px;
-    background: linear-gradient(-90deg, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
   }
 }
 
