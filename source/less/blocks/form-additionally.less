@@ -113,17 +113,6 @@
   }
 }
 
-.form-additionally-item__input:disabled {
-  + .form-additionally-item__control-mark {
-    outline: none;
-    opacity: 0.3;
-
-    + .form-additionally-item__control-label {
-      opacity: 0.3;
-    }
-  }
-}
-
 .form-additionally-item__control-mark {
   position: absolute;
   top: -8px;
@@ -132,11 +121,6 @@
   height: 30px;
   background-color: @base-bg-color;
   border: 1px solid @border-color;
-
-  &:focus {
-    box-shadow: 0 0 0 2px @addicional-basic-color;
-    outline: none;
-  }
 
   @media (min-width: @tablet-width) {
     top: -12px;
@@ -165,5 +149,23 @@
     width: 20px;
     border-width: 0 0 2px 2px;
     height: 10px;
+  }
+}
+
+.form-additionally-item__input:focus {
+  +.form-additionally-item__control-mark {
+    box-shadow: 0 0 0 2px @addicional-basic-color;
+    outline: none;
+  }
+}
+
+.form-additionally-item__input:disabled {
+  + .form-additionally-item__control-mark {
+    outline: none;
+    opacity: 0.3;
+
+    + .form-additionally-item__control-label {
+      opacity: 0.3;
+    }
   }
 }
